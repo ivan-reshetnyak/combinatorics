@@ -17,6 +17,22 @@ bool number::operator==( const number &RV ) const {
   return Value == RV.Value;
 }
 
+bool number::operator>( const number &RV ) const {
+  return Value > RV.Value;
+}
+
+bool number::operator>=( const number &RV ) const  {
+  return Value >= RV.Value;
+}
+
+bool number::operator<( const number &RV ) const  {
+  return Value < RV.Value;
+}
+
+bool number::operator<=( const number &RV ) const  {
+  return Value <= RV.Value;
+}
+
 number number::operator+( const number &RV ) const {
   uint Val = Value + RV.Value;
   if (Val < Value || Val < RV.Value)
@@ -81,6 +97,36 @@ number & number::operator/=( const number &RV ) {
 
   Value /= RV.Value;
   return *this;
+}
+
+number number::operator++( int ) {
+  number Res = *this;
+  Value++;
+  return Res;
+}
+
+number & number::operator++( void ) {
+  Value++;
+  return *this;
+}
+
+number number::operator--( int ) {
+  number Res = *this;
+  Value--;
+  return Res;
+}
+
+number & number::operator--( void ) {
+  Value--;
+  return *this;
+}
+
+number number::pow( number Pow ) const {
+  number Res = 1;
+
+  for (number i = 0; i < Pow; i++)
+    Res *= *this;
+  return Res;
 }
 
 } // End of 'combin' namespace

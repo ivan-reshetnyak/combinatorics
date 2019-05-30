@@ -11,9 +11,8 @@ public:
   number() = default;
   number( uint Val ) : Value( Val ) {}
 
-  operator uint( void ) const;
+  explicit operator uint( void ) const;
   number & operator=( const number &RV );
-  bool operator==( const number &RV ) const;
   number operator+( const number &RV ) const;
   number & operator+=( const number &RV );
   number operator-( const number &RV ) const;
@@ -22,6 +21,18 @@ public:
   number & operator*=( const number &RV );
   number operator/( const number &RV ) const;
   number & operator/=( const number &RV );
+  number operator++( int );
+  number & operator++( void );
+  number operator--( int );
+  number & operator--( void );
+
+  bool operator==( const number &RV ) const;
+  bool operator>( const number &RV ) const;
+  bool operator>=( const number &RV ) const;
+  bool operator<( const number &RV ) const;
+  bool operator<=( const number &RV ) const;
+
+  number pow( number Pow ) const;
 };
 
 } // End of 'combin' namespace
