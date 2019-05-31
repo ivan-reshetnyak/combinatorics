@@ -129,4 +129,14 @@ number number::pow( number Pow ) const {
   return Res;
 }
 
+std::istream & operator>>( std::istream &Stream, number &Num ) {
+  Stream >> Num.Value;
+  return Stream;
+}
+
+std::ostream & operator<<( std::ostream &Stream, const number &Num ) {
+  Stream << Num.Value;
+  return Stream;
+}
+
 } // End of 'combin' namespace

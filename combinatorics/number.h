@@ -1,11 +1,15 @@
 #pragma once
 
+#include <iostream>
+
 namespace combin {
 
 class number {
 private:
   using uint = unsigned int;
   uint Value;
+  friend std::istream & operator>>( std::istream &, number & );
+  friend std::ostream & operator<<( std::ostream &, const number & );
 
 public:
   number() = default;
@@ -34,5 +38,8 @@ public:
 
   number pow( number Pow ) const;
 };
+
+std::istream & operator>>( std::istream &Stream, number &Num );
+std::ostream & operator<<( std::ostream &Stream, const number &Num );
 
 } // End of 'combin' namespace

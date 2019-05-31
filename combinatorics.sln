@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest-md", "..\googletest\g
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "memhooks", "..\memhooks\memhooks\memhooks.vcxproj", "{226A8365-76D4-4D3C-B889-85DDCAFCD4DD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "combinatorics ui", "combinatorics ui\combinatorics ui.vcxproj", "{42FCE0B3-AC12-4369-A2AC-047520AD96F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{226A8365-76D4-4D3C-B889-85DDCAFCD4DD}.Release|x64.Build.0 = Release|x64
 		{226A8365-76D4-4D3C-B889-85DDCAFCD4DD}.Release|x86.ActiveCfg = Release|Win32
 		{226A8365-76D4-4D3C-B889-85DDCAFCD4DD}.Release|x86.Build.0 = Release|Win32
+		{42FCE0B3-AC12-4369-A2AC-047520AD96F5}.Debug|x64.ActiveCfg = Debug|x64
+		{42FCE0B3-AC12-4369-A2AC-047520AD96F5}.Debug|x64.Build.0 = Debug|x64
+		{42FCE0B3-AC12-4369-A2AC-047520AD96F5}.Debug|x86.ActiveCfg = Debug|Win32
+		{42FCE0B3-AC12-4369-A2AC-047520AD96F5}.Debug|x86.Build.0 = Debug|Win32
+		{42FCE0B3-AC12-4369-A2AC-047520AD96F5}.Release|x64.ActiveCfg = Release|x64
+		{42FCE0B3-AC12-4369-A2AC-047520AD96F5}.Release|x64.Build.0 = Release|x64
+		{42FCE0B3-AC12-4369-A2AC-047520AD96F5}.Release|x86.ActiveCfg = Release|Win32
+		{42FCE0B3-AC12-4369-A2AC-047520AD96F5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
